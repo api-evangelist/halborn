@@ -1,0 +1,82 @@
+generated: '2026-08-22'
+method: searched
+source: https://www.halborn.com/about/service-commitments
+trust_center:
+  published: true
+  style: commitments-page
+  url: https://www.halborn.com/about/service-commitments
+  http_status: 200
+  portal: false
+  note: >-
+    Halborn does not run a hosted trust portal (no trust.halborn.com — the host does not resolve)
+    and publishes no downloadable audit reports, subprocessor list, or self-service NDA gate. What
+    it publishes is a "Service Commitments" page organised around security, integrity,
+    confidentiality, privacy and advanced technologies, plus a "Certifications and Contributions"
+    badge carousel. Certification claims below are read from that carousel and from Halborn's own
+    dated announcement posts; no certificate numbers, auditors, scopes or validity dates are
+    published.
+certifications:
+- name: SOC 2
+  type: Type 2
+  organizational: true
+  evidence: https://www.halborn.com/blog/post/halborn-earns-soc-2-type-2-compliance-in-blockchain-security
+  evidence_status: 200
+  note: >-
+    Halborn announced SOC 2 Type 1 first and SOC 2 Type 2 subsequently; both announcements are
+    first-party blog posts. The badge carousel shows "SOC 2" without a type.
+- name: SOC 2
+  type: Type 1
+  organizational: true
+  evidence: https://www.halborn.com/blog/post/halborn-earns-soc-2-type-1-compliance-in-blockchain-security
+  evidence_status: 200
+- name: ISO/IEC 27001
+  type: certification
+  organizational: true
+  evidence: https://www.halborn.com/blog/post/halborn-achieves-iso-iec-27001-certification-and-nist-csf-2-0-alignment
+  evidence_status: 200
+- name: NIST CSF 2.0
+  type: alignment
+  organizational: true
+  evidence: https://www.halborn.com/blog/post/halborn-achieves-iso-iec-27001-certification-and-nist-csf-2-0-alignment
+  evidence_status: 200
+  note: Announced as alignment, not certification.
+practitioner_certifications:
+  note: >-
+    The same carousel mixes organizational certifications with individual practitioner credentials
+    held by Halborn staff. These are recorded separately because they are not company
+    certifications and must not be scored as compliance programs.
+  badges:
+  - CISSP
+  - CISA
+  - CISM
+  - CRISC
+  - OSCP
+  - OSCE
+  - OSWE
+  - OSEE
+  - OSWP
+  - AWS
+memberships_and_contributions:
+- name: CVE Program
+  role: CVE Numbering Authority
+  evidence: https://www.halborn.com/disclosures/disclosure-policy
+  evidence_status: 200
+- name: CryptoCurrency Certification Consortium (C4)
+  role: badge on the certifications carousel
+  evidence: https://www.halborn.com/about/service-commitments
+  evidence_status: 200
+- name: Crypto Valley Association
+  role: badge on the certifications carousel
+  evidence: https://www.halborn.com/about/service-commitments
+  evidence_status: 200
+- name: CEN
+  role: badge on the certifications carousel
+  evidence: https://www.halborn.com/about/service-commitments
+  evidence_status: 200
+- name: BSSC (Blockchain Security Standards Council)
+  role: badge on the certifications carousel
+  evidence: https://www.halborn.com/about/service-commitments
+  evidence_status: 200
+privacy:
+  privacy_policy: https://www.halborn.com/privacy
+  terms_of_use: https://www.halborn.com/terms

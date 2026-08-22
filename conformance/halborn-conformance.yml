@@ -1,0 +1,118 @@
+generated: '2026-08-22'
+method: searched
+source: https://www.halborn.com/disclosures/disclosure-policy, https://www.halborn.com/bvss, https://www.halborn.com/about/service-commitments
+note: >-
+  Halborn publishes no machine-readable API contract, so every contract-level conformance check
+  below is recorded as not_assessable rather than false — there is no artifact to assess. The
+  entries that are true are organizational and process standards Halborn documents on its own site.
+contract:
+  present: false
+  reason: >-
+    No OpenAPI, Swagger, GraphQL, AsyncAPI, gRPC/Protobuf or WSDL surface was found on any Halborn
+    host after full STEP 0b contract discovery. Halborn sells professional security services; it
+    does not ship a developer API.
+conformance:
+- id: cve
+  name: CVE Program / CNA
+  conforms: true
+  evidence:
+    url: https://www.halborn.com/disclosures/disclosure-policy
+    status: 200
+    quote: >-
+      "Our CVE assignment scope includes all blockchain and Web3 products that rely on smart
+      contracts written in Rust, Go, and Solidity as well as blockchain associated Web2 and Web3
+      infrastructure not covered by another CNA."
+- id: cvss
+  name: CVSS 3.1
+  conforms: true
+  evidence:
+    url: https://www.halborn.com/disclosures/disclosure-policy
+    status: 200
+    quote: '"We use CVSS version 3.1 to score vulnerabilities"'
+- id: bvss
+  name: BVSS (Blockchain Vulnerability Scoring System)
+  conforms: true
+  role: author
+  evidence:
+    url: https://www.halborn.com/bvss
+    status: 200
+    quote: >-
+      Halborn publishes BVSS as its own blockchain-specific vulnerability scoring framework,
+      combining exploitability, potential impact and DLT-specific threat metrics.
+  note: >-
+    Halborn is the author of this framework, not a third-party adopter. Recorded as a domain
+    standard Halborn publishes for the blockchain security market, not as conformance to an
+    external body's specification.
+- id: iso-27001
+  name: ISO/IEC 27001
+  conforms: true
+  scope: organizational
+  evidence:
+    url: https://www.halborn.com/blog/post/halborn-achieves-iso-iec-27001-certification-and-nist-csf-2-0-alignment
+    status: 200
+- id: soc2
+  name: SOC 2 Type 2
+  conforms: true
+  scope: organizational
+  evidence:
+    url: https://www.halborn.com/blog/post/halborn-earns-soc-2-type-2-compliance-in-blockchain-security
+    status: 200
+- id: nist-csf
+  name: NIST CSF 2.0
+  conforms: true
+  scope: organizational
+  qualifier: alignment (not certification)
+  evidence:
+    url: https://www.halborn.com/blog/post/halborn-achieves-iso-iec-27001-certification-and-nist-csf-2-0-alignment
+    status: 200
+- id: rfc9116
+  name: RFC 9116 security.txt
+  conforms: false
+  evidence:
+    url: https://www.halborn.com/.well-known/security.txt
+    status: 404
+    quote: >-
+      A full vulnerability disclosure policy and a disclosures@halborn.com contact are published as
+      HTML, but no security.txt makes them machine-discoverable.
+- id: oauth2
+  name: OAuth 2.0
+  conforms: not_assessable
+  evidence:
+    url: https://one.halborn.com/.well-known/oauth-authorization-server
+    status: 404
+    quote: >-
+      Halborn ONE authenticates with a credentials + one-time-code provider (NextAuth
+      /api/auth/providers lists "credentials" only). No OAuth authorization server metadata is
+      served.
+- id: oidc
+  name: OpenID Connect
+  conforms: not_assessable
+  evidence:
+    url: https://one.halborn.com/.well-known/openid-configuration
+    status: 404
+- id: rfc9457
+  name: RFC 9457 Problem Details
+  conforms: not_assessable
+  evidence:
+    url: https://www.halborn.com/openapi.json
+    status: 404
+    quote: No contract exists in which an error envelope could be declared.
+- id: pagination
+  name: Pagination convention
+  conforms: not_assessable
+  evidence:
+    url: https://www.halborn.com/openapi.json
+    status: 404
+- id: idempotency
+  name: Idempotency keys
+  conforms: not_assessable
+  evidence:
+    url: https://www.halborn.com/openapi.json
+    status: 404
+domain_standard:
+  market: blockchain / digital-asset security assessment
+  finding: >-
+    The market's standards surface is a scoring and disclosure surface (CVE/CNA, CVSS, and BVSS),
+    not a data-interchange or transport standard, and Halborn engages with all three. Because
+    Halborn publishes no contract, none of this is declared in a machine-readable artifact, which
+    is why domain_standard_conformance cannot be awarded from a spec location.

@@ -64,5 +64,12 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Halborn is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/halborn_stock/
+Halborn is a blockchain and digital-asset cybersecurity firm selling smart contract assessments, Layer 1 protocol reviews, code security audits, penetration testing, red team exercises and AI security advisory. It publishes a public audit repository, discloses zero-days under its own CVE assignment scope as a CVE Numbering Authority, and maintains BVSS, the Blockchain Vulnerability Scoring System.
+
+As of 2026-08-22 Halborn publishes **no public API, no developer portal and no machine-readable contract**. Full contract discovery (OpenAPI/Swagger on every host root, GraphQL introspection, MCP `tools/list`, A2A agent card, WSDL) found nothing. The Halborn ONE client platform at one.halborn.com is an invitation-only customer portal. What this profile records is what Halborn does publish: a first-party `llms.txt`, a full vulnerability disclosure policy with response SLAs, and organizational certifications.
+
+- https://www.halborn.com/
+- https://www.halborn.com/llms.txt
+- https://www.halborn.com/disclosures/disclosure-policy
+- https://www.halborn.com/about/service-commitments
+- https://github.com/HalbornSecurity

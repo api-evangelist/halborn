@@ -1,0 +1,19 @@
+generated: '2026-08-22'
+method: searched
+source: https://www.halborn.com/contact
+plan_count: 0
+pricing_page: null
+note: >-
+  Halborn publishes no pricing of any kind. https://www.halborn.com/pricing returns 404 and no
+  pricing or plans URL appears anywhere in the site's sitemap (1,020 URLs, all of them
+  blog/audits/case-studies/solutions/industries/about). Engagements are scoped and quoted through
+  the contact form at https://www.halborn.com/contact. This is an enterprise services firm, not a
+  metered API product, so there is no tier, quota or overage surface to record. No `Pricing` or
+  `Plans` pointer is emitted in apis.yml — the artifact records an absence, not a published
+  surface.
+plans: []
+evidence:
+- url: https://www.halborn.com/pricing
+  status: 404
+- url: https://www.halborn.com/contact
+  status: 200

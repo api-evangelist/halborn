@@ -1,17 +1,40 @@
 aid: halborn
 name: Halborn
-description: 'Halborn is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Halborn is a blockchain and digital-asset cybersecurity firm that sells professional security
+  services rather than a developer product. Its assurance practice covers smart contract
+  assessments, Layer 1 protocol reviews, code security audits, web application and cloud
+  infrastructure penetration testing, red team exercises, and custody and key management
+  assessments; its advisory practice covers AI security, blockchain architecture, compliance
+  readiness, risk assessment, technical due diligence and technical training for banks, exchanges,
+  custodians, tokenization platforms, stablecoin issuers, DeFi protocols, central banks and
+  blockchain infrastructure providers. Halborn publishes its engagement results as a public audit
+  repository, discloses zero-day findings under its own CVE assignment scope as a CVE Numbering
+  Authority, and maintains BVSS, the Blockchain Vulnerability Scoring System. As of August 2026 it
+  publishes no public API, no developer portal and no machine-readable contract; its Halborn ONE
+  client platform at one.halborn.com is an invitation-only customer portal.
+image: https://www.halborn.com/og-image.jpeg
 url: https://raw.githubusercontent.com/api-evangelist/halborn/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Security
+- Cybersecurity
+- Blockchain
+- Smart Contracts
+- Security Auditing
+- Penetration Testing
+- Web3
+- Vulnerability Disclosure
+- Compliance
+- Financial Services
+- Professional Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +43,61 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/halborn_stock/
+  url: https://www.halborn.com/
+- type: Blog
+  url: https://www.halborn.com/blog
+- type: BlogRSS
+  url: https://www.halborn.com/blog/feed.xml
+- type: GitHubOrganization
+  url: https://github.com/HalbornSecurity
+- type: Support
+  url: https://www.halborn.com/contact
+- type: Login
+  url: https://one.halborn.com/login
+- type: TermsOfService
+  url: https://www.halborn.com/terms
+- type: PrivacyPolicy
+  url: https://www.halborn.com/privacy
+- type: LLMsTxt
+  url: llms/halborn-llms.txt
+- type: Security
+  url: security/halborn-vulnerability-disclosure.yml
+- type: VulnerabilityDisclosure
+  url: security/halborn-vulnerability-disclosure.yml
+- type: TrustCenter
+  url: security/halborn-trust-center.yml
+- type: Compliance
+  url: security/halborn-trust-center.yml
+- type: Conformance
+  url: conformance/halborn-conformance.yml
+- type: DomainSecurity
+  url: security/halborn-domain-security.yml
+- type: Packages
+  url: packages/halborn-packages.yml
+x-enrichment:
+  date: '2026-08-22'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Halborn sells blockchain security assessments as professional services and ships no developer
+    product: its 1,020-URL sitemap contains no /developers, /docs or /api section, docs.halborn.com
+    and api.halborn.com do not resolve at all, and the only authenticated surface — Halborn ONE at
+    one.halborn.com — is an invitation-only client portal whose login page says "Contact your local
+    org-owner for an invitation". It does publish a real llms.txt, which lists services, industries,
+    reports and RSS feeds and names no API.
+  evidence:
+  - url: https://www.halborn.com/llms.txt
+    status: 200
+  - url: https://www.halborn.com/openapi.json
+    status: 404
+  - url: https://docs.halborn.com/
+    status: 0
+  - url: https://one.halborn.com/openapi.json
+    status: 404
+  - url: https://www.halborn.com/.well-known/agent-card.json
+    status: 404
+  checked: '2026-08-22'

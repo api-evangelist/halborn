@@ -1,0 +1,20 @@
+generated: '2026-08-22'
+method: searched
+source: https://www.halborn.com/llms.txt
+limit_count: 0
+note: >-
+  No rate limits are documented because Halborn publishes no API. There is no developer portal, no
+  API reference and no machine-readable contract on any Halborn host; the only authenticated
+  surface, Halborn ONE at one.halborn.com, is an invitation-only customer web portal whose
+  endpoints are not documented for third-party consumption. No `RateLimits` pointer is emitted in
+  apis.yml — the artifact records an absence, and a pointer would read as a published runtime
+  signal.
+rate_limits: []
+response_headers: []
+evidence:
+- url: https://www.halborn.com/llms.txt
+  status: 200
+- url: https://www.halborn.com/openapi.json
+  status: 404
+- url: https://one.halborn.com/api-docs
+  status: 200

@@ -1,0 +1,73 @@
+generated: '2026-08-22'
+method: searched
+source: >-
+  registry.npmjs.org search + package metadata, pypi.org, crates.io, rubygems.org,
+  github.com/HalbornSecurity, github.com/halbornlabs
+note: >-
+  No first-party API client SDK exists, because Halborn publishes no API. The npm packages below
+  are Solidity/smart-contract source distributions published by a Halborn engineer, not client
+  libraries for a Halborn service. No `SDKs` pointer is emitted in apis.yml for this reason —
+  sdk_count must not be credited for packages that wrap no Halborn API.
+registries_searched:
+- registry: npm
+  query: halborn
+  results: 2 halborn-scoped packages
+- registry: pypi
+  query: halborn
+  results: 0
+  probe: https://pypi.org/pypi/halborn/json
+  status: 404
+- registry: crates.io
+  query: halborn
+  results: 0 crates owned by Halborn
+- registry: rubygems
+  query: halborn
+  results: 0
+- registry: maven-central
+  query: halborn
+  results: 0
+- registry: nuget
+  query: halborn
+  results: 0
+- registry: pkg.go.dev
+  query: halborn
+  results: 0
+packages:
+- name: '@halborn/seraph'
+  registry: npm
+  language: solidity
+  official: true
+  api_client: false
+  kind: smart-contract-library
+  version: 1.0.9
+  published: '2022-07-08'
+  url: https://www.npmjs.com/package/@halborn/seraph
+  repository: https://github.com/halbornlabs/seraph_v2_contracts
+  note: >-
+    Published under the @halborn npm scope and pointing at the halbornlabs GitHub organization
+    ("Halborn Labs"), so treated as first-party. It distributes Seraph v2 contract sources, not an
+    API client. Last published 2022-07-08 — over four years stale as of this pass.
+- name: '@halborn-labs/snapshot.js'
+  registry: npm
+  language: javascript
+  official: false
+  api_client: false
+  kind: fork
+  version: 0.1.2
+  published: '2023-05-10'
+  url: https://www.npmjs.com/package/@halborn-labs/snapshot.js
+  repository: https://github.com/fr0zn/snapshot.js
+  note: >-
+    A fork of @snapshot-labs/snapshot.js published under a halborn-labs scope but homed on a
+    personal GitHub account (fr0zn), with a README copied verbatim from upstream. Not marked
+    official: the scope is the only Halborn signal and the repository is not a Halborn org.
+public_repositories:
+- org: https://github.com/HalbornSecurity
+  type: user account
+  public_repos: 7
+  note: >-
+    Research and publication repos (PublicReports, CTFs, burp-eth, Cadence best practices) — no
+    client library, no CLI, no API contract.
+- org: https://github.com/halbornlabs
+  type: organization
+  public_repos: 1

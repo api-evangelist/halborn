@@ -1,0 +1,55 @@
+generated: '2026-08-22'
+method: probed
+source: live GET probes of /.well-known/* on every Halborn host
+note: >-
+  Every probed path returned 404 on both Halborn hosts. Both hosts are Next.js applications on
+  Vercel whose 404 handler renders an HTML shell, so no path returned a document of any kind. No
+  WellKnown or SecurityTxt pointer is emitted in apis.yml, because the probe records an absence and
+  a pointer would assert that Halborn serves these surfaces.
+hosts:
+- host: www.halborn.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: one.halborn.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
