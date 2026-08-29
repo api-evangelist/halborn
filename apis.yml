@@ -13,6 +13,17 @@ description: >-
   Authority, and maintains BVSS, the Blockchain Vulnerability Scoring System. As of August 2026 it
   publishes no public API, no developer portal and no machine-readable contract; its Halborn ONE
   client platform at one.halborn.com is an invitation-only customer portal.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.halborn.com/og-image.jpeg
 url: https://raw.githubusercontent.com/api-evangelist/halborn/refs/heads/main/apis.yml
 x-type: company
