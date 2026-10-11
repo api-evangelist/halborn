@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "halborn",
+    "captured_at": "2026-10-11T185728",
+    "source_url": "https://www.halborn.com/",
+    "source_type": "Website",
+    "file": "halborn-2026-10-11T185728.png",
+    "bytes": 561740,
+    "capture": "playwright-local"
+  }
+]
