@@ -64,12 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Halborn is a blockchain and digital-asset cybersecurity firm selling smart contract assessments, Layer 1 protocol reviews, code security audits, penetration testing, red team exercises and AI security advisory. It publishes a public audit repository, discloses zero-days under its own CVE assignment scope as a CVE Numbering Authority, and maintains BVSS, the Blockchain Vulnerability Scoring System.
+Halborn is a blockchain and digital-asset cybersecurity firm that sells professional security services rather than a developer product. Its assurance practice covers smart contract assessments, Layer 1 protocol reviews, code security audits, web application and cloud infrastructure penetration testing, red team exercises, and custody and key management assessments; its advisory practice covers AI security, blockchain architecture, compliance readiness, risk assessment, technical due diligence and technical training for banks, exchanges, custodians, tokenization platforms, stablecoin issuers, DeFi protocols, central banks and blockchain infrastructure providers. Halborn publishes its engagement results as a public audit repository, discloses zero-day findings under its own CVE assignment scope as a CVE Numbering Authority, and maintains BVSS, the Blockchain Vulnerability Scoring System. As of August 2026 it publishes no public API, no developer portal and no machine-readable contract; its Halborn ONE client platform at one.halborn.com is an invitation-only customer portal.
 
-As of 2026-08-22 Halborn publishes **no public API, no developer portal and no machine-readable contract**. Full contract discovery (OpenAPI/Swagger on every host root, GraphQL introspection, MCP `tools/list`, A2A agent card, WSDL) found nothing. The Halborn ONE client platform at one.halborn.com is an invitation-only customer portal. What this profile records is what Halborn does publish: a first-party `llms.txt`, a full vulnerability disclosure policy with response SLAs, and organizational certifications.
+**Areas:** Company · Security · Cybersecurity · Blockchain · Smart Contracts · Security Auditing · Penetration Testing · Web3 · Vulnerability Disclosure · Compliance · Financial Services · Professional Services
 
-- https://www.halborn.com/
-- https://www.halborn.com/llms.txt
-- https://www.halborn.com/disclosures/disclosure-policy
-- https://www.halborn.com/about/service-commitments
-- https://github.com/HalbornSecurity
+## Halborn on APIs.io
+
+Everything profiled for Halborn is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/halborn/](https://apis.io/providers/halborn/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Halborn Domain Security](https://apis.io/security/halborn/halborn-domain-security/)
+- [Halborn Trust Center](https://apis.io/security/halborn/halborn-trust-center/)
+- [Halborn Vulnerability Disclosure](https://apis.io/security/halborn/halborn-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Halborn Plans Pricing](https://apis.io/plans/halborn/halborn-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Halborn Rate Limits](https://apis.io/rate-limits/halborn/halborn-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.halborn.com/)
+- [Support](https://www.halborn.com/contact)
+- [Blog](https://www.halborn.com/blog)
+- [Terms of service](https://www.halborn.com/terms)
+- [Privacy policy](https://www.halborn.com/privacy)
+- [GitHub](https://github.com/HalbornSecurity)
+
+## API Evangelist rating
+
+**Kin Score 21.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 43.4 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/halborn/](https://apis.io/providers/halborn/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Halborn: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/halborn/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
